@@ -1,5 +1,6 @@
 body {
     background-color: #FFEEA7;
+
 }
 
 .page {
@@ -124,10 +125,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111;
+
   color: #fff;
   transition: 0.5s;
   z-index: 2;
+
+  
+  background-image: url('./img/about-bg.jpg');
+  background-size: cover; /* Optional: Adjusts the image to cover the entire background */
+  background-repeat: no-repeat; /* Optional: Prevents the image from repeating */
+
+
 }
 
 .showcase.active {
@@ -307,4 +315,42 @@ margin: 5%;
     margin-left: -50px;
     height: 150px;
     width: 150px;
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.glass-container {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: 25rem;
+  height: 25rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
+}
+
+.center {
+  text-align: center;
+}
+
+.text h4 {
+  color: black;
+  margin-top: -75%;
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.about-text {
+  margin-top: 20%;
+  color: #000;
 }
